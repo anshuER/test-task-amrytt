@@ -26,7 +26,7 @@ const AuthPage = ({ searchParams }) => {
   });
 
   const handleSubmit = (values) => {
-    const admins = JSON.parse(window.localStorage.getItem('admins') || '[]');
+    const admins = JSON.parse(localStorage.getItem('admins') || '[]');
 
     if (isLogin) {
       const isUserPresent = admins.some(

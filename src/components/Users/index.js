@@ -1,5 +1,5 @@
 import React from 'react';
-import UsersTable from './OrderTable';
+import UsersTable from './UserTable';
 
 const Users = () => {
   return (

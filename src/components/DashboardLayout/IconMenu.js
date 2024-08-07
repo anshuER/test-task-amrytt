@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 import { usePathname, useRouter } from 'next/navigation';
@@ -62,7 +64,7 @@ const IconMenu = () => {
         </button>
       )}
 
-      {localStorage.getItem('currentUser') && (
+      {isCurrentUser && (
         <IconButtonWrapper>
           <Link href='/user-profile'>
             <span className='sr-only'>Open user menu</span>
