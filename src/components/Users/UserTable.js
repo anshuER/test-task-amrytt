@@ -92,20 +92,4 @@ const UsersTable = () => {
   );
 };
 
-const statusStyles = {
-  Delivered: 'bg-green-500 text-green-800',
-  Cancelled: 'bg-red-500 text-red-800',
-  Pending: 'bg-red-500 text-red-800',
-};
-
-const Chip = ({ status }) => {
-  return (
-    <span
-      className={`px-2 py-1 rounded-full text-[10px] lg:text-sm font-bold ${statusStyles[status]}`}
-    >
-      {status}
-    </span>
-  );
-};
-
 export default UsersTable;
